@@ -1,23 +1,21 @@
 import "./App.css";
+import React from "react";
+import { GoogleLogin } from "@react-oauth/google";
 
-function App() {
+const App = () => {
+  const responseMessage = (response) => {
+    console.log(response);
+  };
+  const errorMessage = (error) => {
+    console.log(error);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2>React Google Login</h2>
+      <GoogleLogin onSuccess={responseMessage} onError={errorMessage} />
     </div>
   );
-}
+};
 
 export default App;
