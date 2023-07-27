@@ -1,7 +1,7 @@
 {
   "name": "FetchMyDrive",
   "version": "0.1.0",
-  "homepage": "http://l0st-idi0t.github.io/FetchMyDrive",
+  "homepage": "https://fetchmydrive.netlify.app",
   "private": true,
   "dependencies": {
     "@react-oauth/google": "^0.11.1",
