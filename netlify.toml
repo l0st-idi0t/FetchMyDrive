@@ -1,2 +1,7 @@
 [build]
   publish = "build"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cross-Origin-Opener-Policy = "same-origin-allow-popups"
