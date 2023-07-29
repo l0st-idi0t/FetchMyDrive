@@ -12,8 +12,10 @@ const App = () => {
 
   return (
     <div className="App">
-      <h2>React Google Login</h2>
-      <GoogleLogin onSuccess={responseMessage} onError={errorMessage} />
+      <h2>Download Your Drive Files</h2>
+      <div className="Modal">
+        <GoogleLogin onSuccess={responseMessage} onError={errorMessage} />
+      </div>
     </div>
   );
 };
